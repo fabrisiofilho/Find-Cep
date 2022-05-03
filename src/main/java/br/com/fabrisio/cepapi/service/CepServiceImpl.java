@@ -32,10 +32,10 @@ public class CepServiceImpl implements CepService {
         ModelMapper modelMapper = new ModelMapper();
         try {
             log.info("Começando processo de procura por Widenet");
-            return findByWidenet(cep).toCep();
+            return modelMapper.map(findByViaCep(cep), Cep.class);
         } catch(Exception e) {
             log.info("Começando processo de procura por ViaCep");
-            return modelMapper.map(findByViaCep(cep), Cep.class);
+            return findByWidenet(cep).toCep();
         }
     }
 
