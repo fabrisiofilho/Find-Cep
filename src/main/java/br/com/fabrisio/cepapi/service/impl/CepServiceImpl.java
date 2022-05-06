@@ -1,10 +1,11 @@
-package br.com.fabrisio.cepapi.service;
+package br.com.fabrisio.cepapi.service.impl;
 
 import br.com.fabrisio.cepapi.dto.Cep;
 import br.com.fabrisio.cepapi.dto.CepViaCep;
 import br.com.fabrisio.cepapi.dto.CepWidenet;
 import br.com.fabrisio.cepapi.exceptions.CepExpetion;
 import br.com.fabrisio.cepapi.exceptions.RequestException;
+import br.com.fabrisio.cepapi.service.CepService;
 import br.com.fabrisio.cepapi.utils.Util;
 import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
@@ -15,6 +16,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Objects;
 
 @Service
 @Slf4j
@@ -25,7 +27,11 @@ public class CepServiceImpl implements CepService {
 
     @Override
     public Cep search(String cep) {
-        return find(cep);
+        Cep cepReturn = find(cep);
+        if (Objects.nonNull(cepReturn)) {
+            cepReturn.setCep(cepReturn.getCep().replace("-", ""));
+        }
+        return cepReturn;
     }
 
     private Cep find(String cep) {
