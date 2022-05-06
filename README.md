@@ -2,6 +2,8 @@
 
 ## Consome duas api prinmariamente, ViaCep e Widenet.
 
+### Requisição e Endpoint
+
 ```
   Get -> Para URL/cep.api/{cep}
   Retornar um json com o Objeto CEP.
@@ -14,3 +16,7 @@
     "uf": "SC"
   }
 ```
+
+### Planos futuros
+
+Buscar um forma aonde seja feito todas as requisições ao mesmo tempo para diversas APIS e pegar a que retornar mais rapido.
