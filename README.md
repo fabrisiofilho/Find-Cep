@@ -10,12 +10,12 @@ Não temos retrição, e publico, então apenas um get sem precisar passar nada 
   Get -> Para URL/cep.api/{cep}
   Retornar um json com o Objeto CEP.
   {
-    "cep": "88704261",
-    "logradouro": "Rua Almir dos Santos Miranda",
+    "cep": "111111111",
+    "logradouro": "Rua X",
     "complemento": "de 744/745 a 1199/1200",
-    "bairro": "Dehon",
-    "localidade": "Tubarão",
-    "uf": "SC"
+    "bairro": "Bairro X",
+    "localidade": "Cidade X",
+    "uf": "Estado X em sigla"
   }
 ```
 
