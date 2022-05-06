@@ -2,7 +2,7 @@
 
 ## Consome duas api prinmariamente, ViaCep e Widenet.
 
-'''
+```
   Get -> Para URL/cep.api/{cep}
   Retornar um json com o Objeto CEP.
   {
@@ -13,4 +13,4 @@
     "localidade": "Tubarão",
     "uf": "SC"
   }
-'''
+```
