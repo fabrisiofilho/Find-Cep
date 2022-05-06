@@ -4,6 +4,8 @@
 
 ### Requisição e Endpoint
 
+Não temos retrição, e publico, então apenas um get sem precisar passar nada já retornaria.
+
 ```
   Get -> Para URL/cep.api/{cep}
   Retornar um json com o Objeto CEP.
