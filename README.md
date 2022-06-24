@@ -21,4 +21,5 @@ Não temos retrição, e publico, então apenas um get sem precisar passar nada 
 
 ### Planos futuros
 
-Buscar um forma aonde seja feito todas as requisições ao mesmo tempo para diversas APIS e pegar a que retornar mais rapido.
+
+Implantar um sistema de retorno de erro, que atualmente retorna nada se não encontrar nenhum Cep.
