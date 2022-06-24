@@ -7,7 +7,7 @@
 Não temos retrição, e publico, então apenas um get sem precisar passar nada já retornaria.
 
 ```
-  Get -> Para URL/cep.api/{cep}
+  Get -> Para https://get-cep.herokuapp.com/cep.api/{cep}
   Retornar um json com o Objeto CEP.
   {
     "cep": "111111111",
