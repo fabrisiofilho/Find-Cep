@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "java.runtime.version",
+      "type": "java.lang.String",
+      "description": "Versão do java para o deploy no heroky"
+    }
+  ]
+}
